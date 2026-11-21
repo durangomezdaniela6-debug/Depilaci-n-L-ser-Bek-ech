@@ -78,7 +78,13 @@ tr:hover td {
     tr:hover img{
          filter:drop-shadow(0 0 15px #ffd700);
 }
-    
+    table {
+    width: 100%;
+}
+    @media (max-width: 600px) {
+  .fila-tarjetas {
+    flex-direction: column;
+  }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -210,5 +216,13 @@ tr:hover td {
     </section>
     <section id="contacto">
         <h1>¡Agenda tu cita</h1>
+        <div class= "tarjeta">
         <p>Puedes contactarnos para agendar tu cita y contratar el paquete que necesitas</p>
          <p>Tambbién puedes visitarnos en CDMX, Lindavista Montevideo. ¡Te esperamos!</p>
+         <a href= "https://api.whatsapp.com/send/?phone=525521830543&text&type=phone_number&app_absent=0"  target= "_blank">
+<img src= "wa.png" alt="wa">
+</a>
+        </div>
+        </section>
+</body>
+</html>
