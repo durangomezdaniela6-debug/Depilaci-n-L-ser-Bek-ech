@@ -39,12 +39,16 @@ box-shadow: 0 0 15px #ffd700;
     li:hover{
 text-shadow: 0 0 15px #ffd700;
 }
+    .tarjeta-paquetes:hover {
+    box-shadow: 0 0 15px #ffd700;
+ }
      nav a {
 font-weight: bold;
 }
    .tarjeta {
     text-align: center;
         border: 2px solid #b87333;
+       padding: 20px;
      }
     .fila-tarjetas { display: flex; justify-content: center; gap: 20px;}
   .iconos {
@@ -53,6 +57,7 @@ font-weight: bold;
     gap: 20px;
     font-size: 2rem;
         margin-top: 20px;
+      flex-wrap: wrap;
          animation: emergerIconos 0.6s ease-out;
         }
     
@@ -70,6 +75,7 @@ flex-direction: column;
 justify-content:center;
     gap: 20px;
     margin-top: 20px;
+        align-items: center;
 }
   @keyframes emergerIconos {
     from {
@@ -101,9 +107,16 @@ th, td {
 border: 2px solid #b87333; 
     text-align: center;
 }
-    table img{
+    table img {
    width:90px;
    display:block;
+   margin-left: auto;
+   margin-right: auto;
+}
+    nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
     @media (max-width: 600px) {
   .fila-tarjetas {
